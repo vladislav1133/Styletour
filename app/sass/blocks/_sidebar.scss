@@ -1,0 +1,198 @@
+.sidebar {
+  padding: 50px 0 70px;
+
+  border-right: 3px solid #dadada;
+
+  & .about {
+      padding-right: 35px;
+
+      & h3 {
+        margin:0 0 25px 0;
+      }
+
+      & p {
+        margin-bottom: 30px;
+        color: #585858;
+      }
+
+      & span {
+        color: #0a94b2;
+      }
+  }
+
+  & .carousel {
+    margin-bottom: 20px;
+    overflow: hidden;
+  }
+
+  & .carousel-indicators {
+    position: relative;
+    bottom: 0;
+    left: 0;
+
+    width: auto;
+    padding: 10px 0;
+    margin-left: 0;
+
+    background: #fff;
+
+    & li {
+      width: 10px;
+      height: 10px;
+      margin: 0 5px;
+
+      background: #9a9a9a;
+    }
+
+    & li.active {
+      background: #5b5b5b;
+    }
+  }
+
+  & .sidebar-carousel-caption {
+    background: #fff;
+    border-bottom: 1px solid #e1e1e1;
+    & div {
+      padding: 20px;
+    }
+
+    & h4 {
+      margin-top: 0;
+
+      font-weight: 700;
+      font-size: 14px;
+    }
+
+    & p {
+      margin-bottom: 0;
+
+      color: #5b5b5b;
+
+      font-size: 12px;
+    }
+  }
+  & .banner {
+    margin-bottom: 40px;
+
+    background: #fff;
+
+    & h2, & h3 {
+      margin: 0;
+
+      text-transform: uppercase;
+    }
+
+    & h2 {
+      font-size: 28px;
+      font-weight: bold;
+    }
+
+    & h3 {
+      font-size: 18px;
+    }
+
+    & img {
+      margin-bottom: 35px;
+    }
+
+    & a.btn-red {
+      display: inline-block;
+      padding: 5px 30px;
+      margin: 30px 0;
+
+      font-size: 18px;
+      font-weight: bold;
+      text-transform: uppercase;
+      border-radius: 3px;
+      transition: all .3s;
+
+      &:hover {
+        color: #fff;
+        text-decoration: none;
+
+      }
+    }
+  }
+}
+
+.widget {
+  padding-bottom: 30px;
+  margin-bottom: 30px;
+
+  border-bottom: 3px solid #dadada;
+
+  & h3 {
+    margin-top: 0;
+    margin-bottom: 30px;
+  }
+
+  & ul {
+    padding-left: 0;
+    margin-bottom: 0;
+
+    list-style: none;
+
+    & li {
+      & a {
+        display: block;
+
+        color: #000;
+
+        line-height: 30px;
+        font-size: 16px;
+        }
+      }
+
+      & li.more a {
+            color: #358acd;
+          }
+        }
+      }
+
+
+      @include lg {
+        .sidebar {
+          & .banner, & .carousel {
+            margin-right: 10px;
+          }
+        }
+      }
+
+      @include lg-only{
+
+      }
+
+
+      @include md {
+        .sidebar {
+          padding-bottom: 0;
+          padding-top: 0;
+          border-right: none;
+          & .banner, & .carousel {
+            margin-right: 0;
+          }
+        }
+      }
+      @include sd {
+
+
+      }
+
+      @include mobile-only {
+
+      }
+
+      @media only screen and (max-width : 540px)  {
+    		.sidebar {
+          & .col-xs-6 {
+            width: 100%;
+          }
+          & .banner, & .carousel {
+            display: inline-block;
+          }
+        }
+    	}
+
+      @include xs {
+
+      }

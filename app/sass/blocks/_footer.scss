@@ -1,0 +1,71 @@
+.footer-menu {
+  padding: 30px 0;
+  background: #343434;
+
+  & h5 {
+    color: #c8c8c8;
+
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+
+  & ul {
+    padding: 0;
+
+
+    list-style: none;
+
+    & li {
+      line-height: 22px;
+
+      & a {
+        display: block;
+        color: #c8c8c8;
+      }
+    }
+  }
+}
+.footer-copyright {
+  padding: 25px 0;
+  background: #fff;
+}
+
+@include lg {
+  .social-icons {
+    & img {
+      display: block;
+
+      margin-bottom: 3px;
+    }
+  }
+}
+
+@include lg-only{
+
+}
+
+
+@include md {
+  .social-icons {
+    & img {
+      display: inline;
+
+      margin-bottom: 0;
+    }
+  }
+  .pay {
+    text-align: left;
+  }
+}
+@include sd {
+
+}
+
+@include mobile-only {
+
+}
+
+@include xs {
+
+}

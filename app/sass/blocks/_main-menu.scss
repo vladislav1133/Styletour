@@ -1,0 +1,148 @@
+.menu-carousel .main-menu .navbar-brand {
+    padding: 0;
+    margin-left: 30px;
+  }
+
+.main-menu {
+  position: absolute;
+  top: 30px;
+  z-index: 21;
+
+  width: 100%;
+
+  & .navbar-inverse {
+    background: transparent;
+    border: none;
+  }
+
+  & .navbar-inverse .navbar-nav > li > a {
+    color: #fff;
+    font-size: 16px;
+    transition: background .3s;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  & .navbar-brand img {
+    float: left;
+  }
+
+  & .navbar-brand span {
+    display: inline-block;
+    padding: 15px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #fff;
+  }
+
+}
+
+.main-menu-bg {
+  background: #000;
+  border-radius: 3px;
+}
+
+.search {
+  position: absolute;
+  right: 25px;
+  z-index: 30;
+
+  display: none;
+
+  color: #fff;
+  cursor: pointer;
+
+  font-size: 22px;
+  line-height: 50px;
+
+}
+
+@include lg {
+  .main-menu {
+    & .navbar-nav {
+      float: none !important;
+    }
+
+    & .navbar-form {
+      position: absolute;
+      right: 15px;
+
+      display: none;
+      padding: 15px;
+      margin: 0;
+      background: rgba(0, 0, 0, .5);
+    }
+
+    & .search {
+      display:block;
+    }
+  }
+}
+
+@include md {
+  .menu-carousel .main-menu .navbar-inverse .navbar-nav > li > a {
+    font-size: 14px;
+  }
+}
+@include sd {
+
+}
+
+@include mobile-only {
+  .main-menu {
+    & .search {
+      display: none;
+    }
+    & .container {
+      padding-left: 0;
+      padding-right: 0;
+    }
+
+    & .navbar-form {
+      position: relative;
+      right: 0;
+
+      display: block !important;
+
+      background: transparent;
+    }
+
+    & .navbar-brand img {
+      max-height: 50px
+    }
+
+    & .navbar-toggle.collapsed + .navbar-brand img {
+      max-height: none;
+      position: relative;
+      z-index: 20;
+    }
+
+  }
+  .menu-carousel .main-menu .navbar-inverse .navbar-nav > li > a {
+    text-decoration: none;
+    font-size: 14px;
+
+    &:hover {
+      background-color: #222222;
+    }
+  }
+}
+
+@include xs {
+
+  .main-menu {
+    & .navbar-toggle.collapsed + .navbar-brand img {
+      max-height: 80px;
+    }
+  }
+}
+
+@include lg-only{
+  .main-menu {
+    & .navbar-form {
+      display: block !important;
+    }
+  }
+}

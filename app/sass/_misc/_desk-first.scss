@@ -1,0 +1,34 @@
+@mixin lg {
+	@media only screen and (max-width : 1200px) {
+		@content;
+	}
+}
+
+@mixin md {
+	@media only screen and (max-width : 992px)  {
+		@content;
+	}
+}
+
+@mixin sd {
+	@media only screen and (max-width : 768px)  {
+		@content;
+	}
+}
+
+@mixin xs {
+	@media only screen and (max-width : 480px)  {
+		@content;
+	}
+}
+
+@mixin mobile-only {
+	@media only screen and (max-width : 767px)  {
+		@content;
+	}
+}
+@mixin lg-only {
+	@media only screen and (min-width : 1200px) {
+		@content;
+	}
+}

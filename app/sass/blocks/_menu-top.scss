@@ -1,0 +1,88 @@
+.btn-red {
+    background-color: #d51e08;
+    color: #fff;
+}
+
+.btn-red:hover {
+    background-color: #ec4835;
+}
+
+.menu-top .navbar {
+    margin-bottom: 0;
+    padding: 20px 0;
+
+    background-color: #fff;
+
+    color: #000;
+    text-transform: uppercase;
+}
+
+.menu-top .container,
+.menu-top .navbar-collapse {
+  padding-left: 0;
+}
+
+ .navbar-default .navbar-nav>li>a {
+  color: #000;
+  padding-bottom: 5px;
+  padding-top: 5px;
+  transition: background .3s;
+}
+
+.navbar-default .navbar-nav>li>a> .glyphicon {
+  margin-right: 10px;
+  font-size: 17px;
+}
+.navbar-default .navbar-nav>li>a:hover {
+ color: #000;
+ padding-bottom: 5px;
+ padding-top: 5px;
+ transition: background .3s;
+ text-decoration: underline;
+}
+
+.flag {
+  margin-right: 5px;
+  position: relative;
+  top:-1px
+}
+.navbar-default .navbar-nav>li>a.btn-red {
+ padding: 5px 20px;
+ color: #fff;
+ border-radius: 3px;
+}
+
+.navbar-default .navbar-nav>li>a.btn-red:hover {
+
+ color: #fff;
+ background: #ec4835;
+ text-decoration: none;
+
+}
+
+@include lg {
+  .menu-top .navbar-nav {
+    float: none !important;
+  }
+}
+
+@include md {
+
+}
+@include sd {
+
+}
+
+@include mobile-only {
+  .navbar-default .navbar-nav>li>a:hover {
+    background-color: #eee ;
+  }
+  .menu-top .container,
+  .menu-top .navbar-collapse {
+    padding-left: 15px;
+  }
+}
+
+@include xs {
+
+}

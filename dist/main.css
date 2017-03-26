@@ -1,0 +1,106 @@
+body {
+  background-color: #ececec;
+  background-color: #000;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14px;
+  color: #000;
+  min-width: 320px;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+h3 {
+  font-size: 24px;
+  font-weight: 700;
+}
+
+/*=====Media mixins=====*/
+
+/*=====containers=====*/
+
+.btn-red {
+  background-color: #d51e08;
+  color: #fff;
+}
+
+.btn-red:hover {
+  background-color: #ec4835;
+}
+
+.menu-top .navbar {
+  margin-bottom: 0;
+  padding: 20px 0;
+  background-color: #fff;
+  color: #000;
+  text-transform: uppercase;
+}
+
+.menu-top .container,
+.menu-top .navbar-collapse {
+  padding-left: 0;
+}
+
+.navbar-default .navbar-nav > li > a {
+  color: #000;
+  padding-bottom: 5px;
+  padding-top: 5px;
+  -webkit-transition: background .3s;
+  transition: background .3s;
+}
+
+.navbar-default .navbar-nav > li > a > .glyphicon {
+  margin-right: 10px;
+  font-size: 17px;
+}
+
+.navbar-default .navbar-nav > li > a:hover {
+  color: #000;
+  padding-bottom: 5px;
+  padding-top: 5px;
+  -webkit-transition: background .3s;
+  transition: background .3s;
+  text-decoration: underline;
+}
+
+.flag {
+  margin-right: 5px;
+  position: relative;
+  top: -1px;
+}
+
+.navbar-default .navbar-nav > li > a.btn-red {
+  padding: 5px 20px;
+  color: #fff;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+}
+
+.navbar-default .navbar-nav > li > a.btn-red:hover {
+  color: #fff;
+  background: #ec4835;
+  text-decoration: none;
+}
+
+@media only screen and (max-width: 1200px) {
+  .menu-top .navbar-nav {
+    float: none !important;
+  }
+
+  .hhhhhhhhhhhhhhhhhh {
+    float: none !important;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .navbar-default .navbar-nav > li > a:hover {
+    background-color: #eee;
+  }
+
+  .menu-top .container,
+  .menu-top .navbar-collapse {
+    padding-left: 15px;
+  }
+}
