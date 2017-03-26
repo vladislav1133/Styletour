@@ -15,35 +15,6 @@
 	}
 }
 
-
-/*=====Media mixins=====*/
-
-@mixin desktop {
-	@media only screen and (min-width: 1200px) {
-		@content;
-	}
-}
-
-@mixin tablet {
-	@media only screen and (min-width: 768px) {
-		@content;
-	}
-}
-
-@mixin mobile {
-	@media only screen and (min-width: 480px) {
-		@content;
-	}
-}
-
-@mixin mobile-only {
-	@media only screen and (max-width: 767px) {
-		@content;
-	}
-}
-
-/*=====containers=====*/
-
 @mixin container {
 	width: 320px;
 	margin: 0 auto;
